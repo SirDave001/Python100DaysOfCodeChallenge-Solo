@@ -1,0 +1,28 @@
+This code is about analyzing the results of a poll. Let me break it down step by step:
+
+1. The code starts by defining a list called `polls`. This list represents the votes of different individuals in a poll. Each name in the list corresponds to a person's vote.
+
+2. Next, two empty lists are created: `candidates` and `votes`. These lists will be used to store the unique candidate names and their corresponding vote counts, respectively.
+
+3. The code then goes through each person's vote in the `polls` list using a loop. For each person, it checks if their name is already in the `candidates` list.
+
+4. If the person's name is not in the `candidates` list, it means they are a new candidate. In this case, their name is added to the `candidates` list, and a vote count of 1 is added to the `votes` list.
+
+5. If the person's name is already in the `candidates` list, it means they have received votes before. The code finds the index of the candidate's name in the `candidates` list and increases their corresponding vote count in the `votes` list by 1.
+
+6. After going through all the votes, the code finds the candidate(s) with the highest number of votes. It initializes a variable `max_vote` to 0 and an empty list `max_candidates`.
+
+7. Using a loop that goes through each candidate's vote count, the code checks if the current vote count is higher than `max_vote`. If it is, it updates `max_vote` to the new highest vote count and stores the corresponding candidate's name in the variable `candidate`. It also appends the candidate's name to the `max_candidates` list.
+
+8. If the current vote count is equal to `max_vote`, it means there is a tie between multiple candidates. In this case, the code appends the current candidate's name to the `max_candidates` list.
+
+9. Finally, the code prints the result. It displays the candidate(s) with the highest vote count using an asterisk (*) to unpack the list of `max_candidates`. It also prints the highest vote count.
+
+For example, if the poll results are as given in the `polls` list, the code will output something like:
+
+```
+The highest vote goes to: ade, ope
+each person has 7 votes
+```
+
+This means that candidates named 'ade' and 'ope' both received the highest number of votes (7 votes each).

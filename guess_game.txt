@@ -1,0 +1,36 @@
+
+
+1. `import random`: This line imports the `random` module, which provides functions for generating random numbers.
+
+3. `def guess_game():`: This line defines a function called `guess_game()` which encapsulates the logic for playing the number guessing game.
+
+5. `play_again = "y"`: This line initializes the variable `play_again` with the value `"y"`. This variable will be used to control whether the game should be played again.
+
+7. `while play_again == "y":`: This line starts a while loop that continues as long as the value of `play_again` is equal to `"y"`. This loop allows the user to play the game multiple times if desired.
+
+9. `answer = random.randint(1, 100)`: This line generates a random integer between 1 and 100 (inclusive) and assigns it to the variable `answer`. This will be the number that the user needs to guess.
+
+10. `guess = int(input("Guess a number between 1 and 100: "))`: This line prompts the user to enter a number between 1 and 100 and converts the input to an integer, assigning it to the variable `guess`. The user's guess is stored in this variable.
+
+11. `counter = 0`: This line initializes the variable `counter` to 0. This variable will keep track of the number of attempts the user has made to guess the correct number.
+
+13. `while guess != answer:`: This line starts a while loop that continues as long as the value of `guess` is not equal to the value of `answer`. This loop allows the user to keep guessing until they guess the correct number.
+
+15. `if guess > answer:`: This line checks if the user's guess is greater than the actual answer.
+
+16. `print("Your guess is too high")`: This line prints a message informing the user that their guess is too high.
+
+18. `if guess < answer:`: This line checks if the user's guess is less than the actual answer.
+
+19. `print("Your guess is too low")`: This line prints a message informing the user that their guess is too low.
+
+21. `guess = int(input("Guess a number between 1 and 100: "))`: This line prompts the user to enter another guess and updates the value of `guess` with the new input.
+
+22. `counter += 1`: This line increments the value of `counter` by 1, indicating that the user has made another guess.
+
+24. `print(f"Your guess is right! You tried {counter} times.")`: This line is executed when the user guesses the correct number. It prints a congratulatory message along with the number of attempts the user took to guess the correct number.
+
+26. `play_again = input("Do you want to play again? ")`: This line prompts the user to enter whether they want to play again or not. The input is stored in the variable `play_again`.
+
+28. `guess_game()`: This line calls the `guess_game()` function, starting the number guessing game.
+
